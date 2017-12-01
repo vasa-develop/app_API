@@ -209,7 +209,7 @@ window.onclick = function(event) {
     if(isset($_GET['placeId'])){
       
         if(!isset($_GET['id'])){
-        mysqli_query($link , "update `lokaso_discovery` set `placeId`='".$_GET['placeId']."' where `id`= 1"); 
+        mysqli_query($link , "update `lokaso_discovery` set `approved`= 1 , `placeId`='".$_GET['placeId']."' where `id`= 1"); 
         ?>
         <script type="text/javascript">
           //alert("The location is now set to placeName: "+ "<?php echo $_GET['placeName']; ?>"+". Press NEXT SUGGESTION button to proceed.");
@@ -220,7 +220,7 @@ window.onclick = function(event) {
       }
       else{
       	$c = $_GET['id']-1;
-        mysqli_query($link , "update `lokaso_discovery` set `placeId`='".$_GET['placeId']."' where `id`=".$c." "); 
+        mysqli_query($link , "update `lokaso_discovery` set `approved`= 1 , `placeId`='".$_GET['placeId']."' where `id`=".$c." "); 
         ?>
         <script type="text/javascript">
           //alert("The location is now set to placeName: "+ "<?php echo $_GET['placeName']; ?>"+". Press NEXT SUGGESTION button to proceed.");

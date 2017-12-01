@@ -15,7 +15,13 @@ include 'GooglePlacesClient.php';
 
 $google_places = new joshtronic\GooglePlaces('AIzaSyBwwg7rqag9qAlzrJoIEgngOVV0d9Zb8Kw');
 
-$query = mysqli_query($link , "SELECT * from `lokaso_discovery` WHERE `id`=".$_GET['id']."");
+/*$q = mysqli_query($link , "SELECT * from `lokaso_discovery`");
+$r = mysqli_fetch_assoc($q);
+$num = mysqli_num_rows($r['id']);
+echo $num;*/
+for($j=0;$j<10;$j++){
+
+	$query = mysqli_query($link , "SELECT * from `lokaso_discovery` WHERE `id`=".$j."");
 $loc = mysqli_fetch_assoc($query);
 
 $string = $loc['location'];
@@ -52,7 +58,13 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *'); 
 $placeId =  json_encode($results["predictions"][0]["place_id"]);
 $name =  json_encode($results["predictions"][0]["structured_formatting"]["main_text"]);
-echo $placeId;
+echo $name;
+if($name!=null){
+	mysqli_query($link , "update `lokaso_discovery` set `approved` = 1 , `placeId`= ".$placeId." WHERE `id`=".$j."");
+}
+}
+
+
 
 
 
