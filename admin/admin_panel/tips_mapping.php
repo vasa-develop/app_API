@@ -232,7 +232,7 @@ window.onclick = function(event) {
         
     }
           if(!isset($_GET['id'])){
-          $query = mysqli_query($link , "SELECT * from `lokaso_discovery` WHERE `id`= 1 ");
+          $query = mysqli_query($link , "SELECT * from `lokaso_discovery` WHERE `id`= 1");
           
         }
         else {
@@ -257,6 +257,11 @@ window.onclick = function(event) {
   <tr>
     <th><?php echo("<strong>".$result['id']."</strong><br>"); ?>&nbsp;&nbsp;
           <?php echo("<strong>Name: </strong><br>".$result['location']."<br>"); ?></th>
+          <?php 
+          		if($result['approved']==1){
+          				?><center><h3><font color = "#0000ff">THIS TIP HAS BEEN APPROVED.</font></h3></center><br><?php
+          		}echo $result['approved'];
+          	 ?>
     <th><center>CATEGORIES</center><br>
       <a href = "tips_mapping.php?id=<?php echo($_GET['id']) ?>&type=night_club">night_club </a> | 
 <a href = "tips_mapping.php?id=<?php echo($_GET['id']) ?>&type=restaurant">restaurant </a> | 

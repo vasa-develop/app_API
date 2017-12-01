@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6147e4cd-f8de-45fc-9d83-136660c4bd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_panel/places.php" afterPath="$PROJECT_DIR$/admin/admin_panel/places.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_panel/tips_mapping.php" afterPath="$PROJECT_DIR$/admin/admin_panel/tips_mapping.php" />
@@ -311,6 +310,7 @@
         <option value="$PROJECT_DIR$/include/db_config.php" />
         <option value="$PROJECT_DIR$/v1/index.php" />
         <option value="$PROJECT_DIR$/admin/admin_panel/tips_mapping.php" />
+        <option value="$PROJECT_DIR$/admin/admin_panel/places.php" />
       </list>
     </option>
   </component>
@@ -505,6 +505,14 @@
       <workItem from="1511473118887" duration="141000" />
       <workItem from="1511787927163" duration="53000" />
     </task>
+    <task id="LOCAL-00001" summary="Added the script">
+      <created>1512144353121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512144353121</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -546,6 +554,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
