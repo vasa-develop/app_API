@@ -4,7 +4,6 @@
     <list default="true" id="6147e4cd-f8de-45fc-9d83-136660c4bd4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_panel/places.php" afterPath="$PROJECT_DIR$/admin/admin_panel/places.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_panel/tips_mapping.php" afterPath="$PROJECT_DIR$/admin/admin_panel/tips_mapping.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -512,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512144353121</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added more functionality">
+      <created>1512145918228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512145918228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -557,7 +563,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the script" />
+    <MESSAGE value="Added more functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
